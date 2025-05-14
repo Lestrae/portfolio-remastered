@@ -83,8 +83,8 @@ useEffect(() => {
         <a href='#contact'><button type='button' onClick={toggleVisibility3} className={`${isVisible3 ? 'hover:bg-white/10 hover:text-yellow-500 hover:border-yellow-500 flex font-mono border-solid border-yellow-500 border-1 rounded-sm px-9.5 py-5 text-sky-500 bg-white/5 backdrop-blur-xs' : 'hover:bg-white/10 hover:text-yellow-500 hover:border-yellow-500 flex font-mono border-solid border-red-500 border-1 rounded-sm px-9.5 py-5 text-red-500 bg-white/5 backdrop-blur-xs'}`}><IoMdContact size={15}/>&nbsp;CONTACT</button></a>
       </div>
       {/* BODY */}
-      <div className='body flex flex-row font-mono border-solid border-red-500/0 border-1 rounded-sm text-xs text-red-500 relative bg-white/0 w-fit mt-15 ml-15 mr-15 z-1'>   
-        <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} viewport={{margin: '-200px'}} id='about' ref={div} style={{display: 'none'}} className='hidden text-xl flex-row font-mono border-solid border-red-500 border-1 rounded-sm text-red-500 bg-white/5 backdrop-blur-xs w-100 h-100 ml-2 mr-2 mt-2'>
+      <div className='body flex flex-row font-mono border-solid border-red-500/0 border-1 rounded-sm text-xs text-red-500 relative bg-white/0 w-fit mt-10 ml-15 mr-15 z-1'>   
+        <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} viewport={{margin: '-200px'}} id='about' ref={div} style={{display: 'none'}} className='hidden text-xl flex-row font-mono border-solid border-red-500 border-1 rounded-sm text-red-500 bg-white/5 backdrop-blur-xs w-100 h-100 mr-2 mt-2'>
           {/* Skills */}
           <div className='w-100 text-xl flex flex-row font-mono border-solid border-red-500/0 border-1 rounded-sm px-2 py-2 text-yellow-500 backdrop-blur-xs'><SiGooglecloudspanner size={20} className='mt-1 mr-1'/>PROFICIENCIES</div>
           <div className='m-0 text-xl flex font-mono border-solid border-red-500/0 border-1 rounded-sm text-red-500 backdrop-blur-xs w-100'>
@@ -124,7 +124,7 @@ useEffect(() => {
             </div>
               
         </motion.div>
-        <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} viewport={{margin: '-200px'}} id='projects' ref={div2} style={{display: 'none'}} className='text-xl flex-col font-mono border-solid border-red-500 border-1 rounded-sm text-red-500 bg-white/5 backdrop-blur-xs w-fit h-100 ml-2 mt-2 pr-0 overflow-auto'>
+        <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} viewport={{margin: '-200px'}} id='projects' ref={div2} style={{display: 'none'}} className='text-xl flex-col font-mono border-solid border-red-500 border-1 rounded-sm text-red-500 bg-white/5 backdrop-blur-xs w-fit h-100 mr-2 mt-2 pr-0 overflow-auto'>
             {/* Projects */}
             <div className='text-xl flex flex-row font-mono rounded-sm p-2 m-0 text-yellow-500 backdrop-blur-xs'><FaProjectDiagram size={20} className='mt-1 mr-1'/>PROJECTS</div>
             {/* Postgrestore */}
@@ -221,7 +221,7 @@ useEffect(() => {
               </div>  
             </motion.div>
         </motion.div>
-        <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} viewport={{margin: '-200px'}} id='contact' ref={div3} style={{display: 'none'}} className='text-xl flex flex-col font-mono border-solid border-red-500/0 border-1 rounded-sm ml-2 mt-2 text-red-500 bg-white/5 backdrop-blur-xs w-fit h-fit'>
+        <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} viewport={{margin: '-200px'}} id='contact' ref={div3} style={{display: 'none'}} className='text-xl flex flex-col font-mono border-solid border-red-500/0 border-1 rounded-sm mt-2 text-red-500 bg-white/5 backdrop-blur-xs w-fit h-fit'>
         {/* Contact */}
         <div className='text-xl flex flex-row font-mono border-solid border-red-500 border-1 rounded-sm px-2 py-2 m-0 text-yellow-500 bg-red-500/2 backdrop-blur-xs'>
         <IoMdContact size={20} className='mt-1 mr-1'/>CONTACT:<br/>
