@@ -24,16 +24,16 @@ const Particlesbg = () => {
     });
   }, []);
 
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
+  // const particlesLoaded = (container) => {
+  //   console.log(container);
+  // };
 
   const options = useMemo(
     () => ({
       background: {
-        color: {
-          value: "#000000",
-        },
+        
+        image: "linear-gradient(rgb(25, 0, 0), rgb(5, 5, 5))"
+        
       },
       fpsLimit: 120,
       interactivity: {
@@ -59,7 +59,7 @@ const Particlesbg = () => {
       },
       particles: {
         color: {
-          value: "#09bbf2",
+          value: "#fec500",
         },
         links: {
           color: "#09bbf2",
@@ -103,7 +103,7 @@ const Particlesbg = () => {
     return (
       <Particles
         id="tsparticles"
-        particlesLoaded={particlesLoaded}
+        // particlesLoaded={particlesLoaded}
         options={options}
       />
     );
