@@ -86,7 +86,7 @@ useEffect(() => {
       <div className='body flex flex-row font-mono border-solid border-red-500/0 border-1 rounded-sm text-xs text-red-500 relative bg-white/0 w-fit mt-15 ml-15 mr-15 z-1'>   
         <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} viewport={{margin: '-200px'}} id='about' ref={div} style={{display: 'none'}} className='hidden text-xl flex-row font-mono border-solid border-red-500 border-1 rounded-sm text-red-500 bg-white/5 backdrop-blur-xs w-100 h-100 ml-2 mr-2 mt-2'>
           {/* Skills */}
-          <div className='w-100 text-xl flex-col font-mono border-solid border-red-500/0 border-1 rounded-sm px-2 py-2 text-yellow-500 backdrop-blur-xs'>PROFICIENCIES</div>
+          <div className='w-100 text-xl flex flex-row font-mono border-solid border-red-500/0 border-1 rounded-sm px-2 py-2 text-yellow-500 backdrop-blur-xs'><SiGooglecloudspanner size={20} className='mt-1 mr-1'/>PROFICIENCIES</div>
           <div className='m-0 text-xl flex font-mono border-solid border-red-500/0 border-1 rounded-sm text-red-500 backdrop-blur-xs w-100'>
             <div className='m-0 items-center text-xs font-bold flex flex-col font-mono border-solid border-red-500 border-1 rounded-sm px-5 py-5 text-sky-500 backdrop-blur-xs w-50'>
             <span className='flex flex-row text-sm text-yellow-500'><GrTechnology size={16}/>&nbsp;Frontend: </span><br/>
@@ -126,7 +126,7 @@ useEffect(() => {
         </motion.div>
         <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} viewport={{margin: '-200px'}} id='projects' ref={div2} style={{display: 'none'}} className='text-xl flex-col font-mono border-solid border-red-500 border-1 rounded-sm text-red-500 bg-white/5 backdrop-blur-xs w-fit h-100 ml-2 mt-2 pr-0 overflow-auto'>
             {/* Projects */}
-            <div className='text-xl flex flex-col font-mono rounded-sm p-2 m-0 text-yellow-500 backdrop-blur-xs'>PROJECTS</div>
+            <div className='text-xl flex flex-row font-mono rounded-sm p-2 m-0 text-yellow-500 backdrop-blur-xs'><FaProjectDiagram size={20} className='mt-1 mr-1'/>PROJECTS</div>
             {/* Postgrestore */}
             <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} viewport={{margin: '-200px'}} className='projDiv m-0 text-xl flex font-mono rounded-sm text-red-500 backdrop-blur-xs w-fit'>
               <div className='projDiv2 text-sm flex flex-col font-bold font-mono border-solid border-red-500 border-1 rounded-sm px-5 py-5 m-0 text-red-500 bg-red-500/5 backdrop-blur-xs w-1/2'>
@@ -221,10 +221,13 @@ useEffect(() => {
               </div>  
             </motion.div>
         </motion.div>
-        <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} viewport={{margin: '-200px'}} id='contact' ref={div3} style={{display: 'none'}} className='text-xl flex font-mono border-solid border-red-500 border-1 rounded-sm ml-2 mt-2 text-red-500 bg-white/5 backdrop-blur-xs w-fit h-65'>
+        <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} viewport={{margin: '-200px'}} id='contact' ref={div3} style={{display: 'none'}} className='text-xl flex flex-col font-mono border-solid border-red-500/0 border-1 rounded-sm ml-2 mt-2 text-red-500 bg-white/5 backdrop-blur-xs w-fit h-fit'>
         {/* Contact */}
-        <div className='text-xl flex flex-col font-mono border-solid border-red-500 border-1 rounded-sm px-2 py-2 m-0 text-yellow-500 bg-red-500/2 backdrop-blur-xs'>
-        CONTACT:<br/>
+        <div className='text-xl flex flex-row font-mono border-solid border-red-500 border-1 rounded-sm px-2 py-2 m-0 text-yellow-500 bg-red-500/2 backdrop-blur-xs'>
+        <IoMdContact size={20} className='mt-1 mr-1'/>CONTACT:<br/>
+        </div>
+        <div className='flex flex-row w-fit m-0'>
+        <div className='text-xl flex flex-col font-mono border-solid border-red-500/100 border-1 rounded-sm px-2 py-2 m-0 text-yellow-500 bg-red-500/2 backdrop-blur-xs'>
         <span className='text-sky-500 text-sm font-bold flex flex-row align-middle m-1'> For inquiries, please contact on one of the following platforms:</span>
         <span className='font-bold text-red-500 text-sm flex flex-row align-middle m-1'><SiGmail color='yellow' size={22} className='hoverIcon2 flex flex-row relative mx-0.5'/>&nbsp;muellivan@gmail.com</span>
         <span className='font-bold text-red-500 text-sm flex flex-row align-middle m-1'><FaViber color='#ff8800' size={25} className='hoverIcon2 flex flex-row relative'/>&nbsp;09762512831</span>
@@ -232,7 +235,8 @@ useEffect(() => {
         <a href='https://www.facebook.com/muellivan/' target='_blank' className='m-1 '><FaFacebook color='#0055ff' size={25} className='hoverIcon2'/> </a>
         </div>
         <div className='hover:bg-white/10 text-xs flex font-bold font-mono border-solid border-red-500 border-1 rounded-sm p-2 m-0 text-red-500 bg-white/5 backdrop-blur-xs w-1/2 justify-center'>
-        <img src={ID} alt='ID pic' className='flex flex-col font-mono opacity-50 rounded-sm w-50 m-0 object-contain'/>
+        <img src={ID} alt='ID pic' className='flex flex-col font-mono opacity-70 rounded-sm w-50 m-0 object-contain'/>
+        </div>
         </div>
         </motion.div>
       </div>
