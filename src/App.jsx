@@ -15,10 +15,11 @@ import cert4 from './pictures/certificates/CloudPractitioner.jpg';
 import cert5 from './pictures/certificates/VPAA.jpg';
 import cert6 from './pictures/certificates/Deans.jpg';
 // import { showDiv2, showDiv3 } from './components/functions';
-import { FaGithub, FaLinkedin, FaFacebook, FaViber } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFacebook, FaViber, FaProjectDiagram, FaDatabase } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
-import { SiGmail } from "react-icons/si";
-import { Mail, Facebook, Phone, Linkedin } from 'lucide-react';
+import { SiGmail, SiGooglecloudspanner } from "react-icons/si";
+import { IoMdContact } from "react-icons/io";
+import { GrTechnology } from "react-icons/gr";
 
 function App() {
 const [isVisible, setIsVisible] = useState(false);
@@ -70,16 +71,16 @@ useEffect(() => {
   return (
     <>
     {/* HEADER */}
-      <div className='flex flex-col font-mono border-solid border-red-500 border-1 rounded-sm text-3xl text-sky-500 relative bg-white/5 mt-15 w-fit mx-15 px-10 py-2 backdrop-blur-xs z-1'>
+      <div className='flex flex-col font-mono border-solid border-red-500 border-1 rounded-sm text-3xl text-sky-500 sticky bg-white/5 mt-15 w-fit mx-15 px-10 py-2 backdrop-blur-xs z-1'>
       <span className='text-yellow-500 m-0 p-0'>GIAN LABAN</span>
       <span className='text-xs font-bold m-0 p-0'>Problem-solving enthusiast and a puzzle lover. Aspiring software engineer.<br/>
       </span>
       </div>
       {/* NAVBAR */}
-      <div className='flex flex-row space-between font-mono border-solid border-red-500/0 border-1 rounded-sm z-10 mt-0 mx-15 px-0 py-0 w-fit sticky'>
-      <a href='#about'><button type='button' onClick={toggleVisibility} id='b1' className={`${isVisible ? 'hover:bg-white/10 hover:text-yellow-500 hover:border-yellow-500 flex font-mono border-solid border-yellow-500 border-1 rounded-sm px-9.5 py-5 text-sky-500 bg-white/5 backdrop-blur-xs' : 'hover:bg-white/10 hover:text-yellow-500 hover:border-yellow-500 flex font-mono border-solid border-red-500 border-1 rounded-sm px-9.5 py-5 text-red-500 bg-white/5 backdrop-blur-xs'}`}>SKILLS</button></a>
-        <a href='#projects'><button type='button' onClick={toggleVisibility2} className={`${isVisible2 ? 'hover:bg-white/10 hover:text-yellow-500 hover:border-yellow-500 flex font-mono border-solid border-yellow-500 border-1 rounded-sm px-9.5 py-5 text-sky-500 bg-white/5 backdrop-blur-xs' : 'hover:bg-white/10 hover:text-yellow-500 hover:border-yellow-500 flex font-mono border-solid border-red-500 border-1 rounded-sm px-9.5 py-5 text-red-500 bg-white/5 backdrop-blur-xs'}`}>PROJECTS</button></a>
-        <a href='#contact'><button type='button' onClick={toggleVisibility3} className={`${isVisible3 ? 'hover:bg-white/10 hover:text-yellow-500 hover:border-yellow-500 flex font-mono border-solid border-yellow-500 border-1 rounded-sm px-9.5 py-5 text-sky-500 bg-white/5 backdrop-blur-xs' : 'hover:bg-white/10 hover:text-yellow-500 hover:border-yellow-500 flex font-mono border-solid border-red-500 border-1 rounded-sm px-9.5 py-5 text-red-500 bg-white/5 backdrop-blur-xs'}`}>CONTACT</button></a>
+      <div className='flex flex-row space-between font-mono border-solid border-red-500/0 border-1 rounded-sm z-10 mt-0 mx-15 px-0 py-0 w-fit top-0 sticky'>
+      <a href='#about'><button type='button' onClick={toggleVisibility} id='b1' className={`${isVisible ? 'hover:bg-white/10 hover:text-yellow-500 hover:border-yellow-500 flex font-mono border-solid border-yellow-500 border-1 rounded-sm px-9.5 py-5 text-sky-500 bg-white/5 backdrop-blur-xs' : 'hover:bg-white/10 hover:text-yellow-500 hover:border-yellow-500 flex font-mono border-solid border-red-500 border-1 rounded-sm px-9.5 py-5 text-red-500 bg-white/5 backdrop-blur-xs'}`}><SiGooglecloudspanner size={15}/>&nbsp;SKILLS</button></a>
+        <a href='#projects'><button type='button' onClick={toggleVisibility2} className={`${isVisible2 ? 'hover:bg-white/10 hover:text-yellow-500 hover:border-yellow-500 flex font-mono border-solid border-yellow-500 border-1 rounded-sm px-9.5 py-5 text-sky-500 bg-white/5 backdrop-blur-xs' : 'hover:bg-white/10 hover:text-yellow-500 hover:border-yellow-500 flex font-mono border-solid border-red-500 border-1 rounded-sm px-9.5 py-5 text-red-500 bg-white/5 backdrop-blur-xs'}`}><FaProjectDiagram size={15}/>&nbsp;PROJECTS</button></a>
+        <a href='#contact'><button type='button' onClick={toggleVisibility3} className={`${isVisible3 ? 'hover:bg-white/10 hover:text-yellow-500 hover:border-yellow-500 flex font-mono border-solid border-yellow-500 border-1 rounded-sm px-9.5 py-5 text-sky-500 bg-white/5 backdrop-blur-xs' : 'hover:bg-white/10 hover:text-yellow-500 hover:border-yellow-500 flex font-mono border-solid border-red-500 border-1 rounded-sm px-9.5 py-5 text-red-500 bg-white/5 backdrop-blur-xs'}`}><IoMdContact size={15}/>&nbsp;CONTACT</button></a>
       </div>
       {/* BODY */}
       <div className='body flex flex-row font-mono border-solid border-red-500/0 border-1 rounded-sm text-xs text-red-500 relative bg-white/0 w-fit mt-15 ml-15 mr-15 z-1'>   
@@ -88,7 +89,7 @@ useEffect(() => {
           <div className='w-100 text-xl flex-col font-mono border-solid border-red-500/0 border-1 rounded-sm px-2 py-2 text-yellow-500 backdrop-blur-xs'>PROFICIENCIES</div>
           <div className='m-0 text-xl flex font-mono border-solid border-red-500/0 border-1 rounded-sm text-red-500 backdrop-blur-xs w-100'>
             <div className='m-0 items-center text-xs font-bold flex flex-col font-mono border-solid border-red-500 border-1 rounded-sm px-5 py-5 text-sky-500 backdrop-blur-xs w-50'>
-            <span className='text-sm text-yellow-500 p-0 m-0'>Frontend: </span><br/>
+            <span className='flex flex-row text-sm text-yellow-500'><GrTechnology size={16}/>&nbsp;Frontend: </span><br/>
             HTML <br/>
             Javascript <br/>
             CSS <br/>
@@ -97,7 +98,7 @@ useEffect(() => {
             Framer<br/>
             </div>
             <div className='items-center text-xs font-bold flex flex-col font-mono border-solid border-red-500 border-1 rounded-sm px-5 py-5 text-sky-500 backdrop-blur-xs w-50'>
-            <span className='text-sm text-yellow-500 p-0 m-0'>Backend: </span><br/>
+            <span className='flex flex-row text-sm text-yellow-500'><FaDatabase size={15}/>&nbsp;Backend: </span><br/>
             PostgreSQL <br/>
             ExpressJs <br/>
             NodeJs <br/>
