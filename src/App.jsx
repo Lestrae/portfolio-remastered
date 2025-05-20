@@ -230,7 +230,7 @@ useEffect(() => {
         <div className='text-xl flex flex-col font-mono border-solid border-red-500/100 border-1 rounded-sm px-2 py-2 m-0 text-yellow-500 bg-red-500/2 backdrop-blur-xs'>
         <span className='text-sky-500 text-sm font-bold flex flex-row align-middle m-1'> For inquiries, please contact on one of the following platforms:</span>
         <span className='font-bold text-red-500 text-sm flex flex-row align-middle m-1'><SiGmail color='yellow' size={22} className='hoverIcon2 flex flex-row relative mx-0.5'/>&nbsp;muellivan@gmail.com</span>
-        <span className='font-bold text-red-500 text-sm flex flex-row align-middle m-1'><FaViber color='#ff8800' size={25} className='hoverIcon2 flex flex-row relative'/>&nbsp;09762512831</span>
+        <span className='font-bold text-red-500 text-sm flex flex-row align-middle m-1'><FaViber color='#ff8800' size={25} className='hoverIcon2 flex flex-row relative'/>&nbsp;09763512831</span>
         <a href='https://www.linkedin.com/in/gian-laban-a14940241/' target='_blank' className='m-1'><FaLinkedin color='#0091ff' size={25} className='hoverIcon2'/> </a>
         <a href='https://www.facebook.com/muellivan/' target='_blank' className='m-1 '><FaFacebook color='#0055ff' size={25} className='hoverIcon2'/> </a>
         </div>
